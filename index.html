@@ -1,59 +1,52 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Создание сайтов | Надёжно и быстро</title>
+  <meta name="description" content="Создание сайтов для бизнеса. Простые, быстрые и удобные сайты под ключ.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бизнес сайт</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <h1>Название бизнеса</h1>
-  <p>Коротко: что вы делаете</p>
-  <a href="https://wa.me/996551515956?text=Здравствуйте!%20Хочу%20узнать%20подробнее"
-     class="btn" target="_blank">
-     Написать в WhatsApp
-  </a>
+<header>
+  <h1>Создание сайтов для бизнеса</h1>
+  <p>Помогаю компаниям получать клиентов через интернет</p>
+  <button id="scrollBtn">Оставить заявку</button>
 </header>
 
-<section class="card">
-  <h2>О нас</h2>
+<section class="about">
+  <h2>Обо мне</h2>
   <p>
-    Мы предоставляем качественные услуги. Работаем быстро и надёжно.
-    Индивидуальный подход к каждому клиенту.
+    Я создаю современные сайты для ресторанов, автомоек, сервисов и малого бизнеса.
+    Сайты быстрые, понятные и адаптированы под телефоны.
   </p>
 </section>
 
-<!-- Услуги -->
-<section class="card">
-    <h2>Наши услуги</h2>
-    <ul>
-  <p>
-  Мы работаем напрямую с клиентами без посредников и лишних расходов.
-  У нас нет дорогих офисов и рекламы, поэтому мы можем предложить
-  качественные услуги по доступной цене.
-  </p>
-    </ul>
+<section class="services">
+  <h2>Услуги</h2>
+  <ul>
+    <li>✔️ Лендинги</li>
+    <li>✔️ Сайты для ресторанов</li>
+    <li>✔️ Сайты для сервисов</li>
+    <li>✔️ Размещение в интернете</li>
+  </ul>
 </section>
 
-<!-- Контакты -->
-<section class="card">
-  <h2>Контакты</h2>
-  <p>📍 Город: Ош</p>
+<section class="contact" id="contact">
+  <h2>Связаться со мной</h2>
+  <form id="form">
+    <input type="text" id="name" placeholder="Ваше имя" required>
+    <input type="tel" id="phone" placeholder="Телефон" required>
+    <button type="submit">Отправить</button>
+  </form>
+  <p id="message"></p>
 </section>
-
 
 <footer>
-  © 2026 Все права защищены
+  <p>© 2026 Создание сайтов</p>
 </footer>
 
-<!-- Кнопка WhatsApp -->
-<a href="https://wa.me/996551515956"
-   class="whatsapp"
-   target="_blank"
-   aria-label="WhatsApp">
-  💬
-</a>
-
+<script src="script.js"></script>
 </body>
 </html>
